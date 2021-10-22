@@ -36,6 +36,7 @@ class Ui_MainWindow(object):
         self.result.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";")
         self.result.setText("")
         self.result.setWordWrap(True)
+        self.result.setAlignment(QtCore.Qt.AlignCenter)
         self.result.setObjectName("result")
         MainWindow.setCentralWidget(self.centralwidget)
         self.upload.clicked.connect(self.uploaded)
